@@ -123,7 +123,7 @@ a {
 }
 
 .card::after {
-  content: ' ';
+  content: " ";
   display: block;
   width: calc(100% - 24px);
   border: 2px solid #eee;
@@ -173,6 +173,21 @@ a {
 .circle-people:nth-child(3) {
   margin-left: -15px;
 }
+
+.multi-ellipsis-header {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.multi-ellipsis-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
 /* //section-seashell */
 
 /* section-purple */
@@ -329,5 +344,4 @@ a {
     display: flex;
     flex-direction: column;
   }
-
 }
