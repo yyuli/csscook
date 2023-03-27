@@ -1,2 +1,1 @@
-# zigzag-event
-# zigzag-event-page
+# CSS 특강 과제
