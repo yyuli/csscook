@@ -1,0 +1,176 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  /*
+	font-weight: 500;
+	font-weight: 700;
+	*/
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #673399;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 1080px;
+  margin: 100px auto;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+header p {
+  color: #bd8fe8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.under-line {
+  box-shadow: inset 0 -0.5em orangered;
+  border-bottom: 2px solid #ff4f6e;
+}
+
+.deco-line {
+  display: block;
+  width: 80px;
+  height: 0;
+  border: 1px solid #bd8fe8;
+  margin: 0 25px;
+}
+
+main {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+}
+
+.img-title {
+  display: flex;
+  flex-basis: 26%;
+  color: #fff;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  min-height:176px;
+}
+
+.rest {
+  background: linear-gradient(rgba(103, 51, 153, 0.5), rgba(103, 51, 153, 0.5)),
+    url(./images/photo01.png) no-repeat 0 0 / cover;
+}
+
+.craft {
+  background: linear-gradient(rgba(103, 51, 153, 0.5), rgba(103, 51, 153, 0.5)),
+    url(./images/photo02.png) no-repeat 0 0 / cover;
+}
+
+.scrap {
+  background: linear-gradient(rgba(103, 51, 153, 0.5), rgba(103, 51, 153, 0.5)),
+    url(./images/photo03.png) no-repeat 0 0 / cover;
+}
+
+.contents-box {
+  padding: 24px;
+  flex-basis: 74%;
+}
+
+.contents-title {
+  font-size: 18px;
+  color: #673399;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.contents-list {
+  font-size: 14px;
+  text-indent: -20px;
+  padding-left: 20px;
+}
+
+.contents-list:not(:first-child) {
+  margin-top: 10px;
+}
+
+.contents-list::before {
+  display: inline-block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bd8fe8;
+  margin-right: 10px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+article:not(:first-child) {
+  margin: 24px 0;
+}
+
+article:last-child {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1176px) {
+  header {
+    display: block;
+    margin: 100px 24px 0;
+
+  }
+
+  header p {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .deco-line {
+    width: 0;
+  }
+
+  main {
+    width: calc(100% - 48px);
+  }
+
+  .img-title {
+    flex-basis: 40%;
+  }
+
+  .contents-box {
+    flex-basis: 60%;
+  }
+
+}
+
+@media (max-width: 520px) {  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
