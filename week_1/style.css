@@ -1,0 +1,35 @@
+body {
+    background-image: url(images/bg.png);
+    background-size: cover;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    margin: 100px auto;
+    width: 300px;
+}
+
+.container {
+    background-color: #93572E;
+    color: white;
+    padding: 5px 20px 25px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 10px 0 0 #4A260B;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text {
+    color: #D7C0B3;
+}
